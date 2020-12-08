@@ -31,4 +31,7 @@ document.addEventListener("DOMContentLoaded", function(){
   // target.addEventListener('drop', function(){
   //   console.log('drop')
   // })
+  swapItem
+  nextSibling
+  
 })
