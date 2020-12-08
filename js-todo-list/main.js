@@ -11,4 +11,18 @@ document.addEventListener('DOMContentLoaded', function(){
       li.remove()
     }
   })
+  const todos = []
+  for (const todo of todos){
+    addItem(todo)
+  }
+  function addItem(text){
+    const newItem = document.createElement('li')
+    newItem.innerHTML = `${text} <span class="close">x</span>`
+    list.appendChild(newItem)
+  }
+  document.querySelector('#addBtn').addEventListener('click', function(){
+    const inputValue = document.querySelector('#input').value
+    addItem(inputValue)
+    document.querySelector('#input').value = ''
+  })
 })
